@@ -1,7 +1,7 @@
 # Teamstats
 ## Description
 This task involves changing the player data collection screen to make it more intuitive and easier for data assistants to collect player stats.
-**By Samuel Gitimu, October 2023.** 
+**By Samuel Gitimu, 2023.** 
 ## Setup Requirements
 - **Visual Studio Code** for development/contribution
 - **Git**
