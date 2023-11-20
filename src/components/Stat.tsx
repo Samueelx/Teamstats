@@ -9,7 +9,7 @@ interface PlayerSessionStats {
 const Stat: React.FC<PlayerSessionStats> = ({ playerStat }) => {
     return (
         <>
-            <div className="w-3/5 p-6 h-1/6 bg-stone-400 rounded-lg m-4">
+            <div className="w-11/12 md:w-3/5 p-6 h-1/6 bg-stone-400 rounded-lg m-4">
                 <p className="mb-4 font-medium">{playerStat[0].playerName}</p>
                 <div className="flex flex-wrap justify-between">
                     {playerStat.map((stat, index) => {

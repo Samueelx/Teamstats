@@ -29,7 +29,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <section className=" pl-32">
+      <section className=" md:pl-32">
         {Object.values(playersGrouped).map((player, index) => {
           return (<div key={index}>
             <Stat playerStat={player} />

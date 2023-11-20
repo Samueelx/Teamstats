@@ -1,30 +1,55 @@
-# React + TypeScript + Vite
+# Teamstats
+## Description
+This task involves changing the player data collection screen to make it more intuitive and easier for data assistants to collect player stats.
+**By Samuel Gitimu, October 2023.** 
+## Setup Requirements
+- **Visual Studio Code** for development/contribution
+- **Git**
+- **Node**
+- **npm** - the package manager for the Node JavaScript platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Technologies Used
+ - React
+ - TypeScript
+ - Tailwind CSS
+ - JSON
 
-Currently, two official plugins are available:
+ ## Getting Started
+ ### Setting up on local PC
+ To set up this project for development on your local PC, 
+ 1. Clone the repository:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+         git clone https://github.com/Samueelx/Teamstats.git
 
-## Expanding the ESLint configuration
+ 2. Go inside the directory where the project has been cloned and run this command to install dependencies:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+         npm install
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+ 3. To run the web application in your browser, run:
+
+
+         npm run dev
+
+
+ 4. If you wish to view the JSON data being used for the user data on the web page, you need to have installed JSON Server on your PC. To do this, run this command:
+
+         npm install -g json-server
+
+
+ 5. Start the JSON server:
+
+         json-server --watch ./data/db.json
+
+You can then view the json data from your browser by visiting `localhost:3000/playersSessionStats`.
+
+
+## Contact and Contribution
+If you wish to contact me about anything concerning this project, be it reporting an issue or you wish to contribute to this project, you can do so via my LinkedIn:
+
+ [LinkedIn](https://www.linkedin.com/in/samuel-gitimu-03ba6424b/)
+## Licence
+[MIT](https://github.com/Samueelx/pimo-pizza-palace/blob/master/LICENCE)
+
+Copyright   (c)     2023
