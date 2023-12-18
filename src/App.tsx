@@ -9,10 +9,10 @@ function App() {
   const [stats, setStats] = useState<SessionStats[]>([]);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/playersSessionStats`).
+    fetch(`https://teamstats-data.vercel.app/playersSessionStats`).
       then(res => res.json()).then((data: SessionStats[]): void => {
         setStats(data)
-        console.log(stats)
+        // console.log(stats)
 
       });
   }, []);
@@ -30,11 +30,8 @@ function App() {
     <>
       <Navbar />
       <section className=" md:pl-32">
-        {Object.values(playersGrouped).map((player, index) => {
-          return (<div key={index}>
-            <Stat playerStat={player} />
-          </div>)
-        })}
+        {Object.values(playersGrouped).map((player, index) => (<Stat playerStat={player} key={index}/>)
+        )}
       </section>
     </>
   )
