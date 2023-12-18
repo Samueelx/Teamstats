@@ -30,6 +30,7 @@ function App() {
     <>
       <Navbar />
       <section className=" md:pl-32">
+        <h2 className="px-4 pt-2 font-semibold">Team Stats</h2>
         {Object.values(playersGrouped).map((player, index) => (<Stat playerStat={player} key={index}/>)
         )}
       </section>
